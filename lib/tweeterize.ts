@@ -1,4 +1,4 @@
-export function tweeterize(txt: String) {
+export function tweeterize(txt: string) {
   const result = []
   let str = txt
 
