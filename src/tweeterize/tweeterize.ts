@@ -1,10 +1,10 @@
-export function tweeterize(txt: string) {
+export function tweeterize(txt: string, limit = 280) {
   const result = []
   let str = txt
 
   while (str.length > 0) {
-    if (str.length > 280) {
-      let deliminator = str.substring(0, 280).lastIndexOf(' ') > (str.substring(0, 280).lastIndexOf('.') + 1) ? str.substring(0, 280).lastIndexOf(' ') : (str.substring(0, 280).lastIndexOf('.') + 1)
+    if (str.length > limit) {
+      let deliminator = str.substring(0, limit).lastIndexOf(' ') > (str.substring(0, limit).lastIndexOf('.') + 1) ? str.substring(0, limit).lastIndexOf(' ') : (str.substring(0, limit).lastIndexOf('.') + 1)
       let chunk = str.substring(0, deliminator).trim()
 
       result.push(chunk)
