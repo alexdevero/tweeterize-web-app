@@ -5,17 +5,24 @@ interface StateUI {
 }
 
 export const State = createContext({
-  text: '',
-  handleTextChange: (text: string) => {}
+  state: {
+    textOriginal: '',
+    textFormatted: []
+  },
+  handleStateChange: (textType: 'textOriginal' | 'textFormatted', value: string | string[]) => {}
 })
 
 export const StateProvider = (props: StateUI) => {
   const [state, setState] = useState({
-    text: ''
+    textOriginal: '',
+    textFormatted: []
   })
 
-  const handleStateChange = (text: string) => {
-    setState(text)
+  const handleStateChange = (textType: 'textOriginal' | 'textFormatted', value: string | string[]) => {
+    setState({
+      ...state,
+      [textType]: value
+    })
   }
 
   return (
