@@ -5,6 +5,7 @@ import { State } from '../state/state'
 import { tweeterize } from './../tweeterize/tweeterize'
 
 import { ReactComponent as BirdImage } from './../images/bird.svg'
+import { Form } from './form'
 
 function App() {
   const { state, handleStateChange } = useContext(State)
@@ -26,19 +27,12 @@ function App() {
 
             <p className="app-hint-text mb-4 text-center">Paste your text into the container below:</p>
 
-            <div className="row mb-2">
-              <div className="col-md-6 col-lg-8 text-left">
-                <label htmlFor="inputLimit" className="h6 font-weight-normal m-0">Message length limit:</label>
-              </div>
-
-              <div className="col-md-6 col-lg-4">
-                <input onChange={(e) => setLimit(+e.currentTarget.value)} type="number" min="0" step="1" className="form-control" id="inputLimit" defaultValue={limit} />
-              </div>
-            </div>
-
-            <textarea onChange={(e: any) => handleStateChange('textOriginal', e.target.value)} className="app-text-container" name="text" id="text" placeholder="Insert the text you want to format"></textarea>
-
-            <button className="btn btn-primary px-3 py-2 d-block mx-auto" onClick={handleTextTweeterizing}>Tweeterize text</button>
+            <Form
+              defaultValue={limit}
+              handleInputChange={setLimit}
+              handleTextareaChange={handleStateChange}
+              handleTweeterizeButton={handleTextTweeterizing}
+            />
 
             {/* Formatted messages */}
             <div className="mt-4">
