@@ -1,3 +1,7 @@
+<div align="center">
+  <img src="./docs/bird.png" width="120" />
+</div>
+
 <p align="center">
   <a href="https://david-dm.org/alexdeverotweeterize-web-app"><img alt="Dependency Status" src="https://david-dm.org/alexdeverotweeterize-web-app.svg?style=flat"></a>
   <a href="https://david-dm.org/alexdeverotweeterize-web-app?type=dev"><img alt="devDependency Status" src="https://david-dm.org/alexdeverotweeterize-web-app/dev-status.svg?style=flat"></a>
