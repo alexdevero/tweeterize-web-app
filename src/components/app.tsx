@@ -4,7 +4,9 @@ import { State } from '../state/state'
 
 import { tweeterize } from './../tweeterize/tweeterize'
 
+import { AppFooter } from './app-footer'
 import { AppHeader } from './app-header'
+import { AppMessages } from './app-messages'
 import { Form } from './form'
 
 function App() {
@@ -18,7 +20,7 @@ function App() {
   return (
     <div className="app">
       <div className="container">
-        <div className="row justify-content-center">
+        <div className="app-main-content row justify-content-center">
           <div className="col-md-8 col-lg-6">
             <AppHeader />
 
@@ -30,15 +32,13 @@ function App() {
             />
 
             {/* Formatted messages */}
-            <div className="mt-4">
-              <h2 className="h5 mb-4">Your Formatted messages:</h2>
-
-              {state.textFormatted.map((el, i) => {
-                return <div className={`h6 font-weight-normal ${state.textFormatted.length !== 1 && i < state.textFormatted.length - 1 ? 'mb-4' : ''}`} key={i}>{el}</div>
-              })}
-            </div>
+            {state.textFormatted.length > 0 && (
+              <AppMessages messages={state.textFormatted} />
+            )}
           </div>
         </div>
+
+        <AppFooter />
       </div>
     </div>
   )
