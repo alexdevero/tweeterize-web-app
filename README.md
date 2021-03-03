@@ -1,46 +1,87 @@
-# Getting Started with Create React App
+<p align="center">
+  <a href="https://david-dm.org/alexdeverotweeterize-web-app"><img alt="Dependency Status" src="https://david-dm.org/alexdeverotweeterize-web-app.svg?style=flat"></a>
+  <a href="https://david-dm.org/alexdeverotweeterize-web-app?type=dev"><img alt="devDependency Status" src="https://david-dm.org/alexdeverotweeterize-web-app/dev-status.svg?style=flat"></a>
+  <a href="http://opensource.org/licenses/MIT"><img alt="MIT License" src="https://img.shields.io/npm/l/express.svg"></a>
+</p>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Tweeterize Web App
 
-## Available Scripts
+Web app for formatting long texts into tweet-sized messages you can share.
 
-In the project directory, you can run:
+### Table of contents
 
-### `yarn start`
+* [Install](#install)
+* [Usage](#usage)
+* [Support this project](#support-this-project)
+* [Code of Conduct](#code-of-conduct)
+* [License](#license)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Install
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+#### Clone this repo
 
-### `yarn test`
+```bash
+git clone https://github.com/alexdevero/tweeterize-web-app.git
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+#### Install dependencies
 
-### `yarn build`
+```bash
+npm install
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+or
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+yarn
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Usage
 
-### `yarn eject`
+#### Run the web app
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```bash
+npm run start
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+or
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```bash
+yarn run start
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+#### Build the web app
 
-## Learn More
+```bash
+npm run build
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+or
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+yarn run build
+```
+
+### Support this project
+
+I open-source almost everything I can, and I try to reply everyone needing help using these projects. Obviously,
+this takes time. You can use these projects in your applications *for free*! You can even change the source code and redistribute (even resell it).
+
+If you get some profit from this or just want to encourage me to continue creating stuff, there are few ways you can do it:
+
+- Starring and sharing the project
+- [![Donate](https://img.shields.io/badge/Donate-Paypal-brightgreen.svg?colorB=259cd2)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=YKLGUUB34ASEL)—make one-time donations via PayPal.
+- [![Donate](https://img.shields.io/badge/Donate-Patreon-brightgreen.svg?colorB=f86213)](https://www.patreon.com/alexdevero)—set up monthly donation via Patreon and get interesting news about what I'm doing.
+- <img alt="bitcoin" src="https://img.shields.io/badge/Donate-Bitcoin-brightgreen.svg?colorB=fab915">—send bitcoins or ethereum to this address: `19jHGagJWeVvuNjN3kaBoAszXd9ea9gKzp`.
+
+Thank you!
+
+### Code of Conduct
+
+[Contributor Code of Conduct](code-of-conduct.md). By participating in this project you agree to abide by its terms.
+
+### License
+
+MIT © [Alex Devero](https://alexdevero.com).
+
+<!-- source: https://github.com/electron/simple-samples/tree/master/url -->
