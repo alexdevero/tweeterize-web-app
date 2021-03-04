@@ -8,13 +8,23 @@ import { AppFooter } from './app-footer'
 import { AppHeader } from './app-header'
 import { AppMessages } from './app-messages'
 import { Form } from './form'
+import { Notification } from './app-notification'
 
 function App() {
   const { state, handleStateChange } = useContext(State)
   const [limit, setLimit] = useState(240)
+  const [notificationVisible, setNotificationVisible] = useState(false)
 
   const handleTextTweeterizing = () => {
     handleStateChange('textFormatted', tweeterize(state.textOriginal, limit))
+  }
+
+  const handleNotificationActivation = () => {
+    setNotificationVisible(true)
+
+    setTimeout(() => {
+      setNotificationVisible(false)
+    }, 1500)
   }
 
   return (
@@ -33,10 +43,16 @@ function App() {
 
             {/* Formatted messages */}
             {state.textFormatted.length > 0 && (
-              <AppMessages messages={state.textFormatted} />
+              <AppMessages
+                messages={state.textFormatted}
+                notificationVisible={notificationVisible}
+                handleSetNotificationVisible={handleNotificationActivation}
+              />
             )}
           </div>
         </div>
+
+        {notificationVisible && <Notification handleNotificationClose={setNotificationVisible} />}
 
         <AppFooter />
       </div>
