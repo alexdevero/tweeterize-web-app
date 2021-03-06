@@ -1,5 +1,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import ReactGA from 'react-ga'
+
+ReactGA.initialize('G-C1KBVTY1HF')
+ReactGA.pageview(window.location.pathname + window.location.search)
 
 import './styles/index.css'
 import './styles/app.css'
