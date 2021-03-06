@@ -3,8 +3,8 @@
 </div>
 
 <p align="center">
-  <a href="https://david-dm.org/alexdeverotweeterize-web-app"><img alt="Dependency Status" src="https://david-dm.org/alexdeverotweeterize-web-app.svg?style=flat"></a>
-  <a href="https://david-dm.org/alexdeverotweeterize-web-app?type=dev"><img alt="devDependency Status" src="https://david-dm.org/alexdeverotweeterize-web-app/dev-status.svg?style=flat"></a>
+  <a href="https://david-dm.org/alexdevero/tweeterize-web-app"><img alt="Dependency Status" src="https://david-dm.org/alexdevero/tweeterize-web-app.svg?style=flat"></a>
+  <a href="https://david-dm.org/alexdevero/tweeterize-web-app?type=dev"><img alt="devDependency Status" src="https://david-dm.org/alexdevero/tweeterize-web-app/dev-status.svg?style=flat"></a>
   <a href="http://opensource.org/licenses/MIT"><img alt="MIT License" src="https://img.shields.io/npm/l/express.svg"></a>
 </p>
 
